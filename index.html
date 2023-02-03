@@ -4,9 +4,480 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Bootstrap</title>
+        <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
+        <style>
+            h1 {
+                margin-top: 100px;
+            }
+            #flex-container {
+                height: 200px;
+                background-color: lightseagreen;
+            }
+        </style>
     </head>
     <body>
+        <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="#"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Another action</a
+                                    >
+                                </li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Something else here</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input
+                            class="form-control me-2"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search"
+                        />
+                        <button class="btn btn-outline-success" type="submit">
+                            Search
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
         <h1>Hello from Bootstrap</h1>
+        <h1>Buttons</h1>
+        <button class="btn btn-primary">My button</button>
+        <button class="btn btn-secondary">My button</button>
+        <button class="btn btn-success">My button</button>
+        <button class="btn btn-warning">My button</button>
+        <button class="btn btn-danger">My button</button>
+
+        <h1>Color</h1>
+        <p class="text-primary">This is first</p>
+        <p class="text-danger">This is first</p>
+        <p class="text-success">This is first</p>
+
+        <h1>Backgrounds</h1>
+        <div class="bg-primary text-white">
+            <h1>My news</h1>
+            <p>I am learning bootstrap</p>
+        </div>
+        <div class="bg-warning text-yellow">
+            <h1>My hobby</h1>
+            <p>I am learning bootstrap</p>
+        </div>
+
+        <h1>Images</h1>
+        <img
+            class="img-fluid w-50 rounded-circle img-thumbnail"
+            src="images/showOff/holiday.jpg"
+            alt=""
+        />
+        <img
+            class="img-fluid w-25 rounded-circle"
+            src="images/showOff/trophy.jpg"
+            alt=""
+        />
+        <img class="img-fluid w-25" src="images/showOff/trophy.jpg" alt="" />
+
+        <h1>Card</h1>
+        <div class="card" style="width: 18rem">
+            <img
+                src="/images/showOff/star.jpg"
+                class="card-img-top"
+                alt="..."
+            />
+            <div class="card-body">
+                <h5 class="card-title">Fish Selling</h5>
+                <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img
+                        src="images/showOff/silver.jpg"
+                        class="card-img-top"
+                        alt="..."
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            This is a longer card with supporting text below as
+                            a natural lead-in to additional content. This
+                            content is a little bit longer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img
+                        src="images/showOff/holiday.jpg"
+                        class="card-img-top"
+                        alt="..."
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a short card.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img
+                        src="images/showOff/buddy.jpg"
+                        class="card-img-top"
+                        alt="..."
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            This is a longer card with supporting text below as
+                            a natural lead-in to additional content.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img
+                        src="images/showOff/sleep.jpg"
+                        class="card-img-top"
+                        alt="..."
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            This is a longer card with supporting text below as
+                            a natural lead-in to additional content. This
+                            content is a little bit longer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1>Navigation</h1>
+        <nav class="nav">
+            <a class="nav-link active" href="">Home</a>
+            <a class="nav-link" href="">Products</a>
+            <a class="nav-link" href="">Shopping Cart</a>
+            <a class="nav-link disabled" href="">Shipping</a>
+        </nav>
+
+        <h1>Navigation2</h1>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                    >Active</a
+                >
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+            </li>
+        </ul>
+
+        <h1>Grid</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <img
+                        class="img-fluid"
+                        src="images/showOff/sleep.jpg"
+                        alt=""
+                    />
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <p>
+                        Bootstrap is a powerful, feature-packed frontend
+                        toolkit. Build anything—from prototype to production—in
+                        minutes. Bootstrap is a powerful, feature-packed
+                        frontend toolkit. Build anything—from protot ype to
+                        production—in minutes. Bootstrap is a powerful,
+                        feature-packed frontend toolkit. Build anything—from
+                        prototype to production—in minutes. Bootstrap is a
+                        powerful, feature-packed frontend toolkit. Build
+                        anything—from prototype to production—in minutes.
+                        Bootstrap is a powerful, feature-packed frontend
+                        toolkit. Build anything—from prototype to production—in
+                        minutes. Bootstrap is a powerful, feature-packed
+                        frontend toolkit. Build anything—from prototype to
+                        production—in minutes.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <p>
+                        Bootstrap is a powerful, feature-packed frontend
+                        toolkit. Build anything—from prototype to production—in
+                        minutes. Bootstrap is a powerful, feature-packed
+                        frontend toolkit. Build anything—from protot ype to
+                        production—in minutes. Bootstrap is a powerful,
+                        feature-packed frontend toolkit. Build anything—from
+                        prototype to production—in minutes. Bootstrap is a
+                        powerful, feature-packed frontend toolkit. Build
+                        anything—from prototype to production—in minutes.
+                        Bootstrap is a powerful, feature-packed frontend
+                        toolkit. Build anything—from prototype to production—in
+                        minutes. Bootstrap is a powerful, feature-packed
+                        frontend toolkit. Build anything—from prototype to
+                        production—in minutes.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <p>
+                        Bootstrap is a powerful, feature-packed frontend
+                        toolkit. Build anything—from prototype to production—in
+                        minutes. Bootstrap is a powerful, feature-packed
+                        frontend toolkit. Build anything—from protot ype to
+                        production—in minutes. Bootstrap is a powerful,
+                        feature-packed frontend toolkit. Build anything—from
+                        prototype to production—in minutes. Bootstrap is a
+                        powerful, feature-packed frontend toolkit. Build
+                        anything—from prototype to production—in minutes.
+                        Bootstrap is a powerful, feature-packed frontend
+                        toolkit. Build anything—from prototype to production—in
+                        minutes. Bootstrap is a powerful, feature-packed
+                        frontend toolkit. Build anything—from prototype to
+                        production—in minutes.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <p>
+            Bootstrap is a powerful, feature-packed frontend toolkit. Build
+            anything—from prototype to production—in minutes. Bootstrap is a
+            powerful, feature-packed frontend toolkit. Build anything—from
+            protot ype to production—in minutes. Bootstrap is a powerful,
+            feature-packed frontend toolkit. Build anything—from prototype to
+            production—in minutes. Bootstrap is a powerful, feature-packed
+            frontend toolkit. Build anything—from prototype to production—in
+            minutes. Bootstrap is a powerful, feature-packed frontend toolkit.
+            Build anything—from prototype to production—in minutes. Bootstrap is
+            a powerful, feature-packed frontend toolkit. Build anything—from
+            prototype to production—in minutes.
+        </p>
+
+        <h1>Carousel</h1>
+        <div class="container">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            src="images/showOff/silver.jpg"
+                            class="d-block w-100"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="images/showOff/buddy.jpg"
+                            class="d-block w-100"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="images/showOff/holiday.jpg"
+                            class="d-block w-100"
+                            alt="..."
+                        />
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Flex Layout</h1>
+            <div id="flex-container" class="d-flex flex-row">
+                <div>Shabana</div>
+                <div>Shabnur</div>
+                <div>Shuchorita</div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Flex Layout2</h1>
+            <div class="d-flex flex-lg-row-reverse">
+                <div>Shabana</div>
+                <div>Shabnur</div>
+                <div>Shuchorita</div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Flex Layout3</h1>
+            <div
+                class="d-flex flex-lg-row flex-sm-column flex-md-column-reverse"
+            >
+                <div>Shabana</div>
+                <div>Shabnur</div>
+                <div>Shuchorita</div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Flex Layout4</h1>
+            <div class="d-flex flex-md-column-reverse">
+                <div>Shabana</div>
+                <div>Shabnur</div>
+                <div>Shuchorita</div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Flex Layout5</h1>
+            <div class="d-flex justify-content-start">
+                <div>Shabana</div>
+                <div>Shabnur</div>
+                <div>Shuchorita</div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Flex Layout6</h1>
+            <div class="d-flex justify-content-center">
+                <div>Shabana</div>
+                <div>Shabnur</div>
+                <div>Shuchorita</div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Flex Layout7</h1>
+            <div class="d-flex justify-content-between">
+                <div>Shabana</div>
+                <div>Shabnur</div>
+                <div>Shuchorita</div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Flex Layout8</h1>
+            <div class="d-flex justify-content-around">
+                <div>Shabana</div>
+                <div>Shabnur</div>
+                <div>Shuchorita</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Flex Layout 9</h1>
+            <div id="flex-container" class="d-flex flex-row">
+                <div>Shabana</div>
+                <div>Shabnur</div>
+                <div>Shuchorita</div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Flex Layout 10</h1>
+            <div
+                id="flex-container"
+                class="d-flex align-items-center justify-content-around"
+            >
+                <div>Shabana</div>
+                <div>Shabnur</div>
+                <div>Shuchorita</div>
+            </div>
+        </div>
+        <!--align for vertical and justify for horizontal-->
+        <div class="container">
+            <h1>Flex Layout 11</h1>
+            <div
+                id="flex-container"
+                class="d-flex align-items-center justify-content-center"
+            >
+                <div>Shabana</div>
+                <div>Shabnur</div>
+                <div>Shuchorita</div>
+            </div>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>
